@@ -6,8 +6,8 @@ sudo curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
 sudo bash nodesource_setup.sh
 sudo apt-get install nodejs -y
 sudo rm nodesource_setup.sh
+echo "Installing Nginx and Certbot"
 sudo apt-get install nginx -y
-echo "Installing Certbot"
 sudo apt-get install software-properties-common -y
 sudo add-apt-repository universe -y
 sudo add-apt-repository ppa:certbot/certbot -y

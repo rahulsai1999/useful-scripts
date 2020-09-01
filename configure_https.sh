@@ -13,7 +13,7 @@ sudo rm /etc/nginx/sites-enabled/default
 sudo nginx -t
 sudo systemctl restart nginx
 echo "Setting up HTTPS"
-sudo certbot --nginx -n -q -d $1 -m $2 --redirect
+sudo certbot --nginx -n -q -d $1 -m $2 --redirect --agree-tos
 sudo systemctl restart nginx
 echo "Make sure to edit your website's configuration by using the command below"
-echo "sudo vi /etc/nginx/sites-available/" $1
+echo "sudo vi /etc/nginx/sites-available/"$1
