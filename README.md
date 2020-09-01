@@ -19,3 +19,8 @@ This repository consists some useful scripts while setting up a server.
 ## Troubleshooting
 
 - Will be added in the future
+
+## Pull Requests
+
+- Got a useful script of your own?
+- Make a pull request with the options and arguments on the README.md
