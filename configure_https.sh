@@ -7,7 +7,7 @@ sudo add-apt-repository ppa:certbot/certbot -y
 sudo apt-get update -y
 sudo apt-get install certbot python-certbot-nginx -y
 echo "Configuring Nginx with provided domain name"
-sudo /etc/nginx/sites-available/default /etc/nginx/sites-available/$1
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/$1
 sudo ln -s /etc/nginx/sites-available/$1 /etc/nginx/sites-enabled/
 sudo rm /etc/nginx/sites-enabled/default
 sudo nginx -t
