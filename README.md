@@ -4,12 +4,13 @@ This repository consists some useful scripts while setting up a server.
 
 ## How to Use
 
-- sudo curl -sL https://raw.githubusercontent.com/rahulsai1999/useful-scripts/master/(name of file) -o setup.sh
-- chmod 755 setup.sh
-- ./setup.sh [extra arguments]
+- `sudo curl -sL https://git.io/JshzZ -o setup.sh`
+- `chmod 755 setup.sh`
+- `./setup.sh [extra arguments]`
 
 ## Options and Arguments
 
+- Complete Setup of Node, Nginx and HTTPS using Certbot [Complete Setup](https://git.io/JshzZ)
 - Install Node [install_node.sh](install_node.sh)
 - Install Nginx [install_nginx.sh](install_nginx.sh)
 - Configure HTTPS on Nginx (email) (domain-name) [congifure_https.sh](configure_https.sh)
