@@ -1,0 +1,64 @@
+upstream backend {
+    least_conn;
+    server localhost:5000;
+    server localhost:5001;
+    server localhost:5002;
+    server localhost:5003;
+    server localhost:5004;
+    server localhost:5005;
+    server localhost:5006;
+    server localhost:5007;
+    server localhost:5008;
+    server localhost:5009;
+    server localhost:5010;
+    server localhost:5011;
+    server localhost:5012;
+    server localhost:5013;
+    server localhost:5014;
+    server localhost:5015;
+    server localhost:5016;
+    server localhost:5017;
+    server localhost:5018;
+    server localhost:5019;
+    server localhost:5020;
+    server localhost:5021;
+    server localhost:5022;
+    server localhost:5023;
+    server localhost:5024;
+    server localhost:5025;
+    server localhost:5026;
+    server localhost:5027;
+    server localhost:5028;
+    server localhost:5029;
+    server localhost:5030;
+    server localhost:5031;
+    server localhost:5032;
+    server localhost:5033;
+    server localhost:5034;
+    server localhost:5035;
+    server localhost:5036;
+    server localhost:5037;
+    server localhost:5038;
+    server localhost:5039;
+    server localhost:5040;
+    server localhost:5041;
+    server localhost:5042;
+    server localhost:5043;
+    server localhost:5044;
+    server localhost:5045;
+    server localhost:5046;
+    server localhost:5047;
+    server localhost:5048;
+    server localhost:5049;
+    server localhost:5050;
+}
+
+server {
+    listen 80 default_server;
+
+    server_name nginx-backend;
+
+    location / {
+        proxy_pass http://backend;
+    }
+}
