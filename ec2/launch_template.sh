@@ -19,7 +19,7 @@ echo "Clone Repositories:"
 git clone https://username:password@github.com/Get-MARKS/marks-backend.git staging
 
 echo "Installing Dependencies:"
-cd marks-backend
+cd staging
 sudo npm install
 
 echo "Downloading PM2 script and forking multiple processes:"
